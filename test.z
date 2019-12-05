@@ -1,0 +1,19 @@
+DeclareList {
+    a: integer;
+    b: integer;
+    sum: real;
+}
+Program main {
+    read(a);
+    read(b);
+    sum = (a + b) / 2.0;
+    if ( sum > 10 ) {
+        write("Average bigger than 10");
+    } else {
+        write("Average less or equals than 10");
+    }
+    while ( sum != 0 ) {
+        sum = sum - 1;
+        write(sum);
+    }
+}
